@@ -15,12 +15,12 @@
   },
   "autoload": {
     "psr-4": {
-      "AaronAdrian\\StringOperatorComparison": "src/"
+      "AaronAdrian\\StringOperatorComparison\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Tests\\": "tests/"
+      "AaronAdrian\\StringOperatorComparison\\Tests\\": "tests/"
     }
   }
 }
