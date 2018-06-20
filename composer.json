@@ -1,0 +1,26 @@
+{
+  "name": "aaroncadrian/string-operator-comparison",
+  "description": "Compare strings using a string operator",
+  "keywords": [
+    "string operator",
+    "comparison"
+  ],
+  "license": "MIT",
+  "type": "library",
+  "require": {
+    "php": ">=7.1.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "AaronAdrian\\StringOperatorComparison": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  }
+}
