@@ -1,8 +1,8 @@
 <?php
 
-namespace Tests;
+namespace AaronAdrian\StringOperatorComparison\Tests;
 
-class TestCase
+class TestCase extends \PHPUnit\Framework\TestCase
 {
-
+    //
 }
