@@ -11,6 +11,7 @@ class Operator
     /**
      * Operator constructor.
      * @param string $operator
+     * @throws InvalidOperatorType
      */
     public function __construct($operator)
     {
