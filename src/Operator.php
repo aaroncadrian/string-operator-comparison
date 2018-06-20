@@ -2,19 +2,10 @@
 
 namespace AaronAdrian\StringOperatorComparison;
 
+use AaronAdrian\StringOperatorComparison\Exceptions\InvalidOperatorType;
+
 class Operator
 {
-    public const LESS_THAN = '<';
-    public const LESS_THAN_OR_EQUAL_TO = '<=';
-    public const GREATER_THAN = '>';
-    public const GREATER_THAN_OR_EQUAL_TO = '>=';
-    public const EQUALS = '=';
-    public const EQUAL_TO = '==';
-    public const IDENTICAL_TO = '===';
-    public const DOES_NOT_EQUAL = '<>';
-    public const NOT_EQUAL_TO = '!=';
-    public const NOT_IDENTICAL_TO = '!==';
-
     protected $operator;
 
     /**
@@ -23,6 +14,12 @@ class Operator
      */
     public function __construct($operator)
     {
+        try {
+            new OperatorType($operator);
+        } catch (\UnexpectedValueException $exception) {
+            throw new InvalidOperatorType($operator, $exception);
+        }
+
         $this->operator = $operator;
     }
 
