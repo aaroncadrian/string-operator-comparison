@@ -1,8 +1,27 @@
 <?php
 
-namespace Tests\Unit;
+namespace AaronAdrian\StringOperatorComparison\Tests\Unit;
 
-class GreaterThanUnitTest
+use AaronAdrian\StringOperatorComparison\Operator;
+use AaronAdrian\StringOperatorComparison\Tests\TestCase;
+
+class GreaterThanUnitTest extends TestCase
 {
+    /**
+     * @test
+     */
+    public function passes()
+    {
+        $operator = new Operator('>');
+        $this->assertTrue($operator->compare(2, 1));
+    }
 
+    /**
+     * @test
+     */
+    public function fails()
+    {
+        $operator = new Operator('>');
+        $this->assertFalse($operator->compare(1, 2));
+    }
 }
