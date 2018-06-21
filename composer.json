@@ -1,6 +1,12 @@
 {
   "name": "aaroncadrian/string-operator-comparison",
   "description": "Compare strings using a string operator",
+  "authors": [
+    {
+      "name": "Aaron Adrian",
+      "email": "aaroncadrian@gmail.com"
+    }
+  ],
   "keywords": [
     "string operator",
     "comparison"
